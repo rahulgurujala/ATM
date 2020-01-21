@@ -1,10 +1,10 @@
-var users = [
-  { name: "Rahul", acNum: "111111", bal: "120000", pin: "1995" },
-  { name: "Govind", acNum: "222222", bal: "100000", pin: "1999" },
-  { name: "Priyanks", acNum: "333333", bal: "250000", pin: "2000" },
-  { name: "Supriya", acNum: "444444", bal: "50000", pin: "2002" }
-];
 const init = () => {
+  var users = [
+    { name: "Jhon", acNum: "111111", bal: "120000", pin: "1995" },
+    { name: "Max", acNum: "222222", bal: "100000", pin: "1999" },
+    { name: "Rose", acNum: "333333", bal: "250000", pin: "2000" },
+    { name: "Emmily", acNum: "444444", bal: "50000", pin: "2002" }
+  ];
   let acNum, logBtn, acPin, selectOpt, logScreen;
   acNum = document.getElementById("acNum");
   acPin = document.getElementById("acPin");
@@ -13,10 +13,12 @@ const init = () => {
   logScreen = document.querySelector(".logScreen");
 
   logBtn.addEventListener("click", () => {
-    acNumber = Number(acNum.value);
-    acPIN = Number(acPin.value);
     for (let i = 0; i < users.length; i++) {
-      if (acNumber === users[i].acNum && acPIN === users[i].acPin) {
+      console.log(users[i]);
+      if (
+        Number(acNum.value) === users[i].acNum &&
+        Number(acPin.value) === users[i].pin
+      ) {
         console.log(users.name + " is Logged in.");
       }
     }
