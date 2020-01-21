@@ -1,4 +1,4 @@
-var users = requere("./dist/users.json");
+var users = requere("./dist/users.js");
 
 const init = () => {
   let acNum, logBtn, acPin, selectOpt, logScreen;
