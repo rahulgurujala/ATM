@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>ATM</title>
+  </head>
+  <body>
+    <center class="logScreen">
+      <h1 class="title">Welcome to ERAS Bank</h1>
+      <input
+        type="text"
+        name="acNum"
+        id="acNum"
+        placeholder="Enter Account Number"
+      />
+      <input
+        type="password"
+        name="acPin"
+        id="acPin"
+        placeholder="Enter your Pin"
+      />
+      <button id="logBtn" type="submit">Login</button>
+    </center>
+    <center class="mainScreen" style="display: none;">
+      <h2 class="title">Please Select to procede</h2>
+      <select name="selectOpt" id="selectOpt">
+        <option value="with">Withdraw</option>
+        <option value="dep">Deposite</option>
+        <option value="checkBal">Check Balance</option>
+        <option value="changePIN">Change PIN</option>
+      </select>
+    </center>
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
